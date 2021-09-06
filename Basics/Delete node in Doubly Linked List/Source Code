@@ -35,6 +35,7 @@ class Solution
 		        temp = temp.next;
 		        i++;
 		    }
+		    temp.next.next.prev = temp;
 		    temp.next = temp.next.next;
 		}
 		return head;
